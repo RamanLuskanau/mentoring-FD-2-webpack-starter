@@ -1,0 +1,17 @@
+@import '../../scss/colors.scss';
+
+.header {
+    background-color: $purple-color;
+    display: grid;
+    grid-template-columns: 100px, 1fr;
+    align-items: center;
+    &__logo {
+        width: 100px;
+        height: 100px;
+    }
+    &__navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,8 @@
+@import '../../scss/colors.scss';
+
+.button {
+    background-color: $success-color;
+    border-radius: 10px;
+    padding: 10px;
+    color: $neutral-primary;
+}
