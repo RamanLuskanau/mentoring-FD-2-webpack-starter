@@ -1,0 +1,24 @@
+@use '../../scss/colors.scss' as *;
+
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px 30px 120px;
+  &__rights {
+    font-size: 12px;
+    color: $neutral-secondary;
+  }
+  &__icons img {
+    padding: 20px;
+    cursor: pointer;
+    transition: ease 0.5s;
+  }
+  &__icons img:hover {
+    height: 33px;
+    width: 33px;
+    transition: ease 0.5s;
+    box-shadow: 3px 3px 3px $neutral-regular;
+  }
+}

@@ -1,17 +1,93 @@
-@import '../../scss/colors.scss';
+@use '../../scss/colors.scss' as *;
 
 .header {
-    background-color: $purple-color;
-    display: grid;
-    grid-template-columns: 100px, 1fr;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  &__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    &__logo {
-        width: 100px;
-        height: 100px;
-    }
-    &__navigation {
+    &--left {
+      margin-right: 550px;
+      &--logo {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction: row;
+        .header__logo--btn {
+            padding: 10px;
+            font-size: 24px;
+            background-color: black;
+            color: #fff;
+          }
+      }
     }
+    &--right {
+      display: flex;
+      flex-direction: row;
+      .header__input {
+        font-size: 14px;
+        padding: 10px;
+        color: $neutral-placeholder;
+        border: 1px solid $neutral-placeholder;
+        border-radius: 5px;
+      }
+      .header__input:hover {
+        color: $neutral-regular;
+        border: 1px solid $neutral-primary;
+      }
+      .header__top--btn1 {
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 10px;
+        color: $neutral-regular;
+        border: 1px solid $neutral-placeholder;
+      }
+      .header__top--btn1:hover {
+        color: $neutral-regular;
+        border: 1px solid $neutral-primary;
+      }
+      .header__top--btn2 {
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 5px;
+        margin-left: 10px;
+        color: $neutral-regular;
+        border: 1px solid $neutral-placeholder;
+      }
+      .header__top--btn2:hover {
+        color: $neutral-regular;
+        border: 1px solid $neutral-primary;
+      }
+    }
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    &__link {
+      font-size: 14px;
+      text-decoration: none;
+      color: black;
+      padding: 0 50px;
+    }
+    &__link:hover {
+      text-decoration: underline;
+    }
+    &__link--active {
+      color: $danger-color;
+    }
+    &__link--active:hover {
+      text-decoration: underline;
+    }
+  }
 }
+
+

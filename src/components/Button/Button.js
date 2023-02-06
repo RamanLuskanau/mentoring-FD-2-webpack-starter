@@ -1,7 +1,7 @@
 import './Button.scss';
 
-export const Button = () => {
+export const Button = (text, classname) => {
   return `
-    <button class="button" id="button">Subscribe</button>
-    `.trim();
+        <button class="${classname}">${text}</button>
+      `.trim();
 };
